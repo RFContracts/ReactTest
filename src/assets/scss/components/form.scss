@@ -1,0 +1,14 @@
+#root .form {
+  box-sizing: border-box;
+  position: relative;
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-row-gap: 3rem;
+
+  padding: 2rem;
+
+  * {
+    font-size: 1.6rem;
+  }
+}

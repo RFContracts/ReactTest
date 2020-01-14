@@ -1,0 +1,21 @@
+#root {
+  .MuiTabs-indicator {
+    background-color: #3f51b5;
+  }
+
+  .MuiTab-root {
+    font-size: 1.4rem;
+  }
+
+  .MuiTabs-root,
+  .MuiCard-root {
+    overflow: unset;
+  }
+
+  .auth {
+    position: relative;
+    margin: 4rem 0;
+
+    box-sizing: border-box;
+  }
+}

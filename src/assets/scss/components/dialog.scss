@@ -1,0 +1,30 @@
+.dialog {
+  position: relative;
+
+  .MuiPaper-root {
+    position: relative;
+    overflow: unset;
+  }
+
+  .MuiTypography-root {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    padding: 2rem;
+  }
+
+  &__actions {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+
+    padding: 2rem;
+
+    button {
+      font-size: 1.6rem;
+    }
+  }
+}

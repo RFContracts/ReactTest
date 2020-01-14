@@ -1,0 +1,122 @@
+@import "../vars";
+
+.users {
+  display: grid;
+  box-sizing: border-box;
+
+  grid-template-columns: 6rem 1fr 1fr 10rem;
+
+  grid-auto-rows: 10rem;
+
+  align-items: center;
+}
+
+.user-table {
+  position: relative;
+  box-sizing: border-box;
+
+  width: 70rem;
+  height: 50rem;
+
+  padding: 0 2rem;
+
+  overflow: auto;
+  box-shadow: $shadow;
+}
+
+.user-item {
+
+  &__loader {
+    grid-column: 1 / 5;
+    display: flex;
+
+    justify-content: center;
+  }
+
+  &__header {
+    display: flex;
+    position: sticky;
+    top: -1px;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: #ffffff;
+
+    border-bottom: .1rem solid $color-main;
+
+    z-index: 1;
+  }
+
+  &__email {
+    padding: 0 1rem;
+
+    a {
+      text-decoration: none;
+      color: $color-main;
+    }
+
+  }
+
+  &__name {
+    padding: 0 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__avatar {
+    justify-self: center;
+  }
+
+  &__actions {
+    display: flex;
+    justify-self: center;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__action {
+  }
+
+  &__button {
+    svg {
+      height: 3rem;
+      width: 3rem;
+
+      color: $color-main;
+    }
+
+  }
+
+}
+
+
+.test1 {
+  position: sticky;
+  top: 0;
+  grid-column: 1;
+}
+
+.test2 {
+  position: sticky;
+  top: 0;
+  grid-column: 2 / 3;
+}
+
+.test3 {
+  position: sticky;
+  top: 0;
+  grid-column: 3;
+}
+
+.test4 {
+  position: sticky;
+  top: 0;
+  grid-column: 4;
+}

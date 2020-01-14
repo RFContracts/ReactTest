@@ -1,0 +1,59 @@
+@import "../vars";
+
+.app-header {
+  display: flex;
+  justify-content: flex-end;
+
+  min-height: 6.4rem;
+
+  padding: 0 3rem;
+
+  background: $color-main;
+  color: #ffffff;
+
+  &__user-container {
+    display: inline-grid;
+
+    grid-template-columns: 1fr 4rem 4rem;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template:
+      "avatar email exit"
+      "avatar name exit"
+    ;
+
+    grid-row-gap: .4rem;
+    grid-column-gap: 1rem;
+
+    align-items: center;
+    justify-items: start;
+
+    padding: 1rem;
+  }
+
+  &__name {
+    grid-area: name;
+    font-size: 1.2rem;
+  }
+
+  &__email {
+    grid-area: email;
+  }
+
+  &__avatar {
+    grid-area: avatar;
+    justify-self: center;
+  }
+
+  &__exit {
+    grid-area: exit;
+    justify-self: center;
+
+    svg {
+      height: 2rem;
+      width: 2rem;
+
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import "../vars";
+
+#root .message,
+.message {
+  box-sizing: border-box;
+  position: absolute;
+  display: grid;
+
+  top: calc(2rem + 100%);
+
+  grid-template-columns: 2rem 1fr 5rem;
+  grid-column-gap: 2rem;
+
+  align-items: center;
+
+  min-height: 5rem;
+  width: 100%;
+
+  padding: 1rem;
+
+  border-radius: .5rem;
+  box-shadow: $shadow;
+
+  z-index: 1;
+
+  &--error {
+    background: $color-error;
+  }
+
+  &--info {
+    background: $color-main;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+
+  &__icon {
+
+  }
+
+  &__button {
+
+  }
+
+  svg {
+    height: 2.5rem;
+    width: 2.5rem;
+
+    color: #ffffff;
+  }
+}
